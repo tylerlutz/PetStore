@@ -8,6 +8,10 @@ namespace PetStore.Models
 {
     public class PetStoreContext : DbContext
     {
+        public PetStoreContext()
+            :base("PetStore")
+        {
+        }
         public DbSet<Animal> Animals { get; set; }
     }
 }
