@@ -15,5 +15,6 @@ namespace PetStore.Models
         public int Quantity { get; set; }
         public double Price { get; set; }
         public byte[] Picture { get; set; }
+        public string PicturePath { get; set; }
     }
 }

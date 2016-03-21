@@ -22,3 +22,13 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.bigBreak {
+    margin-top: 50px;
+}
+
+.inventoryImg {
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+}
