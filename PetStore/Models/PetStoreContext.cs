@@ -9,7 +9,7 @@ namespace PetStore.Models
     public class PetStoreContext : DbContext
     {
         public PetStoreContext()
-            :base("CardPetStore")
+            :base("DefaultConnection")
         {
         }
         public DbSet<Animal> Animals { get; set; }
