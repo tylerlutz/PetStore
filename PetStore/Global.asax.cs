@@ -14,8 +14,6 @@ namespace PetStore
     {
         protected void Application_Start()
         {
-            Database.SetInitializer<PetStoreContext>(new PetStoreContextInitializer());
-
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

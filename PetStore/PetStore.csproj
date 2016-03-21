@@ -168,7 +168,6 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Animal.cs" />
     <Compile Include="Models\PetStoreContext.cs" />
-    <Compile Include="Models\PetStoreContextInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
