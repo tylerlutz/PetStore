@@ -1,6 +1,9 @@
 ﻿body {
+    background-color: #DBC7AA;
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -58,5 +61,23 @@ textarea {
 
 .multiLine {
     height: 100px;
+}
+
+.homeText p{
+    font-size: large;
+    color: #6B7C8E;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+    background-color: #6B7C8E;
+}
+
+.navbar-nav li a {
+    color: #F7882F;
+}
+
+.navbar-header a {
+    color: #FBC12F;
 }
 
