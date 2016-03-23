@@ -173,6 +173,10 @@
     <Compile Include="Migrations\201603231519104_Remove Picture.Designer.cs">
       <DependentUpon>201603231519104_Remove Picture.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201603231627136_Added Data Annotations.cs" />
+    <Compile Include="Migrations\201603231627136_Added Data Annotations.Designer.cs">
+      <DependentUpon>201603231627136_Added Data Annotations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Animal.cs" />
     <Compile Include="Models\PetStoreContext.cs" />
@@ -247,6 +251,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201603231519104_Remove Picture.resx">
       <DependentUpon>201603231519104_Remove Picture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603231627136_Added Data Annotations.resx">
+      <DependentUpon>201603231627136_Added Data Annotations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

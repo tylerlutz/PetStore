@@ -28,7 +28,35 @@ textarea {
 }
 
 .inventoryImg {
-    width: 100px;
+    width: 250px;
     height: 100px;
     margin-top: 30px;
+    box-shadow: 8px 8px 10px #aaa;
 }
+
+.polaroid {
+  position: relative;
+  width: 320px;
+}
+
+.polaroid img {
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+
+.polaroid p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  font: 400 18px/1 'Kaushan Script', cursive;
+  color: #888;
+}
+
+.multiLine {
+    height: 100px;
+}
+

@@ -4,14 +4,14 @@
     ViewBag.Title = "Detail";
 }
 
-<h2> @Model.Name Detail</h2>
+<h2> @Model.Name</h2>
 <hr />
 <div class="container">
-    <div class="col-lg-3">
-        <img src="~/Images/@Model.PicturePath" class="detailImage img-responsive" />
-        <center><p id="animalCost">@Model.Price.ToString()</p></center>
+    <div class="col-lg-5 polaroid">
+        <p>@Model.Price</p>
+        <img src="~/Images/@Model.PicturePath" class="img-responsive" />
     </div>
-    <div class="col-lg-9">
+    <div class="col-lg-7 detailText">
         <p>@Model.ShortDescription</p>
         <p>@Model.MainDescription</p>
     </div>
