@@ -14,7 +14,6 @@ namespace PetStore.Models
         public DateTime DateRecieved { get; set; }
         public int Quantity { get; set; }
         public double Price { get; set; }
-        public byte[] Picture { get; set; }
         public string PicturePath { get; set; }
     }
 }

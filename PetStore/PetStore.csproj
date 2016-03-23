@@ -169,9 +169,14 @@
     <Compile Include="Migrations\201603211948413_Update Model.Designer.cs">
       <DependentUpon>201603211948413_Update Model.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201603231519104_Remove Picture.cs" />
+    <Compile Include="Migrations\201603231519104_Remove Picture.Designer.cs">
+      <DependentUpon>201603231519104_Remove Picture.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Animal.cs" />
     <Compile Include="Models\PetStoreContext.cs" />
+    <Compile Include="Models\Picture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -181,7 +186,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Images\UL_Cardinal_head_logo.png" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -220,9 +224,11 @@
     <Content Include="Views\Store\Create.cshtml" />
     <Content Include="Views\Store\Inventory.cshtml" />
     <Content Include="Views\Store\Details.cshtml" />
+    <Content Include="Views\Store\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -238,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201603211948413_Update Model.resx">
       <DependentUpon>201603211948413_Update Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603231519104_Remove Picture.resx">
+      <DependentUpon>201603231519104_Remove Picture.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

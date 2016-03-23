@@ -1,20 +1,22 @@
 ﻿@model PetStore.Models.Animal
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "View";
 }
 
-<h2>Create</h2>
+<h2>View</h2>
 
 
-@using (Html.BeginForm("Create","Store",FormMethod.Post, new { enctype="multipart/form-data"}))
+@using (Html.BeginForm("Edit", "Store", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
-    @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
         <h4>Animal</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.AnimalID)
+
         <div class="form-group">
             @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -62,17 +64,15 @@
                 @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
             </div>
         </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.PicturePath, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                <input type="file" name="File" id="File" />
-            </div>
+        @Html.HiddenFor(model => model.PicturePath);
+        <img src="~/Images/@Model.PicturePath" />
+        <div class="col-md-10">
+            <input type="file" name="File" id="File" />
         </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Save" class="btn btn-default" />
             </div>
         </div>
     </div>

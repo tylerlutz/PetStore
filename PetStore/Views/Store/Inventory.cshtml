@@ -9,7 +9,7 @@
 @foreach (var item in Model) {
 
         <div class="col-sm-2">
-            <img src="@item.PicturePath" class="img-responsive inventoryImg" />
+            <img src="~/Images/@item.PicturePath" class="img-responsive inventoryImg" />
         </div>
         <div class="col-sm-10">
             <h2>@item.Name @Html.ActionLink("View Details","Details", new { id = item.AnimalID })</h2>
