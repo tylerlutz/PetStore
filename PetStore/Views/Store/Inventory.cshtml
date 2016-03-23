@@ -7,7 +7,7 @@
 <div class="container">
     <div  class="bigBreak"></div>
 @foreach (var item in Model) {
-
+    <div class="animalContainer col-lg-12">
         <div class="col-sm-2">
             <img src="~/Images/@item.PicturePath" class="img-responsive inventoryImg" />
         </div>
@@ -16,6 +16,8 @@
             <p>@item.ShortDescription</p>
         </div>
         <br />
+        <hr />
+    </div>
 }
 
 </div>
